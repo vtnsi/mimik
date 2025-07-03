@@ -1,0 +1,12 @@
+{
+    "edges": [
+        ["band", "pred"],
+        ["sea_height", "pred"],
+        ["sea_state", "pred"]
+    ],
+    "data": "data/processed.csv",
+    "CPDs": null,
+    "estimator": "Bayesian",
+    "prior_type": "BDeu",
+    "equivalent_sample_size": 10
+}

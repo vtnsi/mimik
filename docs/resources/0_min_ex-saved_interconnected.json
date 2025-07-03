@@ -1,0 +1,40 @@
+{
+    "minimal": {
+        "Find1": {
+            "attributes": {},
+            "connected_components": [
+                "Fix1",
+                "Fix2"
+            ]
+        },
+        "Fix1": {
+            "attributes": {},
+            "connected_components": [
+                "Track1",
+                "Track2"
+            ]
+        },
+        "Fix2": {
+            "attributes": {},
+            "connected_components": [
+                "Track1",
+                "Track2"
+            ]
+        },
+        "Track1": {
+            "attributes": {},
+            "connected_components": []
+        },
+        "Track2": {
+            "attributes": {},
+            "connected_components": []
+        },
+        "Find2": {
+            "attributes": {},
+            "connected_components": [
+                "Fix1",
+                "Fix2"
+            ]
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+	"killchain_betabernoulli": {
+		"Find": {
+			"connected_components": ["Fix"],
+			"attributes": {
+				"x": 0,
+				"y": 0,
+				"task": "BetaBernoulli",
+				"task_arguments": {
+					"alpha": 10,
+					"beta": 1
+				}
+			}
+        },
+		"Fix": {
+			"connected_components": ["Track"],
+			"attributes": {
+				"x": 1,
+				"y": 0,
+				"task": "BetaBernoulli",
+				"task_arguments": {
+					"alpha": 10,
+					"beta": 1
+				}
+			}
+        },
+		"Track": {
+			"connected_components": ["Target"],
+			"attributes": {
+				"x": 2,
+				"y": 0,
+				"task": "BetaBernoulli",
+				"task_arguments": {
+					"alpha": 10,
+					"beta": 1
+				}
+			}
+        },
+		"Target": {
+			"connected_components": ["Engage"],
+			"attributes": {
+				"x": 3,
+				"y": 0,
+				"task": "BetaBernoulli",
+				"task_arguments": {
+					"alpha": 10,
+					"beta": 1
+				}
+			}
+        },
+		"Engage": {
+			"connected_components": ["Assess"],
+			"attributes": {
+				"x": 4,
+				"y": 0,
+				"task": "BetaBernoulli",
+				"task_arguments": {
+					"alpha": 10,
+					"beta": 1
+				}
+			}
+        },
+		"Assess": {
+			"connected_components": [],
+			"attributes": {
+				"x": 5,
+				"y": 0,
+				"task": "BetaBernoulli",
+				"task_arguments": {
+					"alpha": 10,
+					"beta": 1
+				}
+			}
+		}
+	}
+}

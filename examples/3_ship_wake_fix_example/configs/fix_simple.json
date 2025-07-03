@@ -1,0 +1,50 @@
+{
+    "edges": [
+        ["Time", "Fix"],
+        ["Weather", "Fix"]
+    ],
+    "data": null,
+    "CPDs":
+    {
+      "Time":
+      { "variable": "Time",
+        "variable_card": 2,
+        "values": [
+          [0.70],
+          [0.30]
+        ],
+        "state_names": {
+          "Time": ["Day", "Night"]
+        }
+      },
+      "Weather":
+      { "variable": "Weather",
+        "variable_card": 2,
+        "values": [
+          [0.90],
+          [0.10]
+        ],
+        "state_names": {
+          "Weather": ["Clear", "Fog"]
+        }
+      },
+      "Fix":
+      { "variable": "Fix",
+        "variable_card": 2,
+        "values": [
+          [0.01, 0.60, 0.10, 0.80],
+          [0.99, 0.40, 0.90, 0.20]
+        ],
+        "evidence": [
+          "Time",
+          "Weather"
+        ],
+        "evidence_card": [2,2],
+        "state_names": {
+          "Time": ["Day", "Night"],
+          "Weather": ["Clear", "Fog"],
+          "Fix": ["Failure", "Success"]
+        }
+      }
+    }
+}

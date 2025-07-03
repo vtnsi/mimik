@@ -1,0 +1,75 @@
+{
+	"killchain_betabernoulli": {
+		"Find": {
+			"connected_components": ["Fix"],
+			"attributes": {
+				"x": 0,
+				"y": 0,
+				"task": "FindTask",
+				"task_arguments": {
+					"mu": 10,
+					"sigma2": 5,
+					"alpha": 100
+				}
+			}
+        },
+		"Fix": {
+			"connected_components": ["Track"],
+			"attributes": {
+				"x": 1,
+				"y": 0,
+				"task": "FixTask",
+				"task_arguments": {
+					"p": 0.9
+				}
+			}
+        },
+		"Track": {
+			"connected_components": ["Target"],
+			"attributes": {
+				"x": 2,
+				"y": 0,
+				"task": "TrackTask",
+				"task_arguments": {
+					"k": 10,
+					"theta": 1,
+					"beta": 11
+				}
+			}
+        },
+		"Target": {
+			"connected_components": ["Engage"],
+			"attributes": {
+				"x": 3,
+				"y": 0,
+				"task": "TargetTask",
+				"task_arguments": {
+					"p": 1
+				}
+			}
+        },
+		"Engage": {
+			"connected_components": ["Assess"],
+			"attributes": {
+				"x": 4,
+				"y": 0,
+				"task": "EngageTask",
+				"task_arguments": {
+					"alpha": 9,
+					"beta": 2
+				}
+			}
+        },
+		"Assess": {
+			"connected_components": [],
+			"attributes": {
+				"x": 5,
+				"y": 0,
+				"task": "AssessTask",
+				"task_arguments": {
+					"p": 0.95
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,239 @@
+{
+    "f2t2ea": {
+        "Radar_1": {
+            "attributes": {
+                "task": "Find",
+                "task_arguments": {
+                    "I": 8,
+                    "J": 20
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Sensor_1",
+                "Sensor_2",
+                "Sensor_3"
+            ]
+        },
+        "Sensor_1": {
+            "attributes": {
+                "task": "Fix",
+                "task_arguments": {
+                    "d": 100,
+                    "sigma2": 20,
+                    "alpha_fix": 1000
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Track Algorithm_1"
+            ]
+        },
+        "Track Algorithm_1": {
+            "attributes": {
+                "task": "Track",
+                "task_arguments": {
+                    "alpha_track": 150,
+                    "beta_track": 10,
+                    "tau": 15
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Equation_1"
+            ]
+        },
+        "Equation_1": {
+            "attributes": {
+                "task": "Target",
+                "task_arguments": {
+                    "probability": 1.0
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Missle_1",
+                "Missle_3"
+            ]
+        },
+        "Missle_1": {
+            "attributes": {
+                "task": "Engage",
+                "task_arguments": {
+                    "alpha_engage": 10,
+                    "beta_engage": 2
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Personnel_1"
+            ]
+        },
+        "Personnel_1": {
+            "attributes": {
+                "task": "Assess",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": []
+        },
+        "Radar_2": {
+            "attributes": {
+                "task": "Find",
+                "task_arguments": {
+                    "I": 20,
+                    "J": 20
+                },
+                "system_name": "System_2"
+            },
+            "connected_components": [
+                "Sensor_2"
+            ]
+        },
+        "Sensor_2": {
+            "attributes": {
+                "task": "Fix",
+                "task_arguments": {
+                    "d": 120,
+                    "sigma2": 30,
+                    "alpha_fix": 1200
+                },
+                "system_name": "System_2"
+            },
+            "connected_components": [
+                "Track Algorithm_1",
+                "Track Algorithm_2",
+                "Track Algorithm_3"
+            ]
+        },
+        "Track Algorithm_2": {
+            "attributes": {
+                "task": "Track",
+                "task_arguments": {
+                    "alpha_track": 175,
+                    "beta_track": 15,
+                    "tau": 25
+                },
+                "system_name": "System_2"
+            },
+            "connected_components": [
+                "Equation_2"
+            ]
+        },
+        "Equation_2": {
+            "attributes": {
+                "task": "Target",
+                "task_arguments": {
+                    "probability": 1.0
+                },
+                "system_name": "System_2"
+            },
+            "connected_components": [
+                "Missle_2",
+                "Missle_3"
+            ]
+        },
+        "Missle_2": {
+            "attributes": {
+                "task": "Engage",
+                "task_arguments": {
+                    "alpha_engage": 13,
+                    "beta_engage": 3
+                },
+                "system_name": "System_2"
+            },
+            "connected_components": [
+                "Personnel_2"
+            ]
+        },
+        "Personnel_2": {
+            "attributes": {
+                "task": "Assess",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "System_2"
+            },
+            "connected_components": []
+        },
+        "Radar_3": {
+            "attributes": {
+                "task": "Find",
+                "task_arguments": {
+                    "I": 15,
+                    "J": 20
+                },
+                "system_name": "System_3"
+            },
+            "connected_components": [
+                "Sensor_3"
+            ]
+        },
+        "Sensor_3": {
+            "attributes": {
+                "task": "Fix",
+                "task_arguments": {
+                    "d": 80,
+                    "sigma2": 15,
+                    "alpha_fix": 800
+                },
+                "system_name": "System_3"
+            },
+            "connected_components": [
+                "Track Algorithm_1",
+                "Track Algorithm_3"
+            ]
+        },
+        "Track Algorithm_3": {
+            "attributes": {
+                "task": "Track",
+                "task_arguments": {
+                    "alpha_track": 300,
+                    "beta_track": 20,
+                    "tau": 40
+                },
+                "system_name": "System_3"
+            },
+            "connected_components": [
+                "Equation_3"
+            ]
+        },
+        "Equation_3": {
+            "attributes": {
+                "task": "Target",
+                "task_arguments": {
+                    "probability": 1.0
+                },
+                "system_name": "System_3"
+            },
+            "connected_components": [
+                "Missle_3"
+            ]
+        },
+        "Missle_3": {
+            "attributes": {
+                "task": "Engage",
+                "task_arguments": {
+                    "alpha_engage": 12,
+                    "beta_engage": 4
+                },
+                "system_name": "System_3"
+            },
+            "connected_components": [
+                "Personnel_3"
+            ]
+        },
+        "Personnel_3": {
+            "attributes": {
+                "task": "Assess",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "System_3"
+            },
+            "connected_components": []
+        }
+    }
+}

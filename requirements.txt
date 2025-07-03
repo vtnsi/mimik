@@ -1,0 +1,9 @@
+matplotlib
+networkx
+pgmpy
+scipy
+pytest
+pytest-mock
+jsonschema
+PyQt6
+ipympl

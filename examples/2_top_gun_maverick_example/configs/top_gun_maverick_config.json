@@ -1,0 +1,143 @@
+{
+    "killweb": {
+        "Radar": {
+            "attributes": {
+                "task": "Survey Region",
+                "task_arguments": {
+                    "probability": 0.99
+                },
+                "system_name": "Comanche"
+            },
+            "connected_components": [
+                "Manual_Targeting_1",
+                "Manual_Targeting_2",
+                "WSO_Targeting_Pod_2"
+            ]
+        },
+        "Manual_Targeting_1": {
+            "attributes": {
+                "task": "Target Bunker Door",
+                "task_arguments": {
+                    "probability": 0.4
+                },
+                "system_name": "Dagger_1"
+            },
+            "connected_components": [
+                "PGB_1"
+            ]
+        },
+        "PGB_1": {
+            "attributes": {
+                "task": "Engage Bunker Door",
+                "task_arguments": {
+                    "probability": 0.95
+                },
+                "system_name": "Dagger_1"
+            },
+            "connected_components": [
+                "Manual_Targeting_3",
+                "Manual_Targeting_4",
+                "WSO_Targeting_Pod_4"
+            ]
+        },
+        "Manual_Targeting_2": {
+            "attributes": {
+                "task": "Target Bunker Door",
+                "task_arguments": {
+                    "probability": 0.2
+                },
+                "system_name": "Dagger_2"
+            },
+            "connected_components": [
+                "PGB_2"
+            ]
+        },
+        "WSO_Targeting_Pod_2": {
+            "attributes": {
+                "task": "Target Bunker Door",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "Dagger_2"
+            },
+            "connected_components": [
+                "PGB_1",
+                "PGB_2"
+            ]
+        },
+        "PGB_2": {
+            "attributes": {
+                "task": "Engage Bunker Door",
+                "task_arguments": {
+                    "probability": 0.1
+                },
+                "system_name": "Dagger_2"
+            },
+            "connected_components": [
+                "Manual_Targeting_3",
+                "Manual_Targeting_4",
+                "WSO_Targeting_Pod_4"
+            ]
+        },
+        "Manual_Targeting_3": {
+            "attributes": {
+                "task": "Target Nuclear Facility",
+                "task_arguments": {
+                    "probability": 0.3
+                },
+                "system_name": "Dagger_3"
+            },
+            "arguments": {
+                "probability": 0.3
+            },
+            "connected_components": [
+                "PGB_3"
+            ]
+        },
+        "PGB_3": {
+            "attributes": {
+                "task": "Engage Nuclear Facility",
+                "task_arguments": {
+                    "probability": 0.95
+                },
+                "system_name": "Dagger_3"
+            },
+            "connected_components": []
+        },
+        "Manual_Targeting_4": {
+            "attributes": {
+                "task": "Target Nuclear Facility",
+                "task_arguments": {
+                    "probability": 0.1
+                },
+                "system_name": "Dagger_4"
+            },
+            "connected_components": [
+                "PGB_4"
+            ]
+        },
+        "WSO_Targeting_Pod_4": {
+            "attributes": {
+                "task": "Target Nuclear Facility",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "Dagger_4"
+            },
+            "connected_components": [
+                "PGB_3",
+                "PGB_4"
+            ]
+        },
+        "PGB_4": {
+            "attributes": {
+                "task": "Engage Nuclear Facility",
+                "task_arguments": {
+                    "probability": 0.1
+                },
+                "system_name": "Dagger_4"
+            },
+            "connected_components": []
+        }
+    }
+}

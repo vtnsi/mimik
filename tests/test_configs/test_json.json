@@ -1,0 +1,28 @@
+{
+    "TestKillweb": {
+        "Test_Component_1": {
+            "attributes": {
+                "task": "Test_Task",
+                "task_arguments": {"probability": 1.0},
+                "system_name": "Test_System"
+            },
+            "connected_components": ["Test_Component_2"]
+        },
+        "Test_Component_2": {
+            "attributes": {
+                "task": "Test_Task_2",
+                "task_arguments": {"probability": 0.9},
+                "system_name": "Test_System"
+            },
+            "connected_components": ["Test_Component_3"]
+        },
+        "Test_Component_3": {
+            "attributes": {
+                "task": "Test_Task_3",
+                "task_arguments": {"probability": 0.8},
+                "system_name": "Test_System"
+            },
+            "connected_components": []
+        }
+    }
+}

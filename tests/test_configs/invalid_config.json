@@ -1,0 +1,25 @@
+{
+    "killweb": {
+        "systems": [
+            {
+                "Test_System": {
+                    "Test_Component_1": {
+                        "task": "Test_Task",
+                        "arguments": {"probability": 1.0},
+                        "connected_components": ["Test_Component_2"]
+                    },
+                    "Test_Component_2": {
+                        "task": "Test_Task_2",
+                        "arguments": {"probability": 0.9},
+                        "connected_components": ["Test_Component_3"]
+                    },
+                    "Test_Component_3": {
+                        "task": "Test_Task_3",
+                        "arguments": {"probability": 0.8},
+                        "connected_components": []
+                    }
+                }
+            }
+        ]
+    }
+}

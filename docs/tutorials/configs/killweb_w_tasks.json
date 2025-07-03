@@ -1,0 +1,71 @@
+{
+	"killweb_w_tasks": {
+		"Find1": {
+			"connected_components": ["Fix1","Fix2"],
+			"attributes": {
+    			"x": 0,
+    			"y": 0,
+    			"task": "Find",
+    			"task_arguments": {
+        			"success_probability": 0.9
+    			}
+			}
+		},
+		"Fix1": {
+			"connected_components": ["Track1","Track2"],
+			"attributes": {
+    			"x": 1,
+    			"y": 0,
+    			"task": "Fix",
+    			"task_arguments": {
+        			"success_probability": 0.9
+    			}
+			}
+		},
+		"Track1": {
+            "connected_components": [],
+            "attributes": {
+            	"x": 2,
+            	"y": 0,
+    			"task": "Track",
+    			"task_arguments": {
+        			"success_probability": 0.9
+    			}
+        	}
+
+        },
+		"Find2": {
+			"connected_components": ["Fix1","Fix2"],
+			"attributes": {
+    			"x": 0,
+    			"y": 1,
+    			"task": "Find",
+    			"task_arguments": {
+        			"success_probability": 0.9
+    			}
+			}
+		},
+		"Fix2": {
+			"connected_components": ["Track1","Track2"],
+			"attributes": {
+    			"x": 1,
+    			"y": 1,
+    			"task": "Fix",
+    			"task_arguments": {
+        			"success_probability": 0.9
+    			}
+			}
+		},
+		"Track2": {
+            "connected_components": [],
+            "attributes": {
+    			"x": 2,
+    			"y": 1,
+    			"task": "Track",
+    			"task_arguments": {
+        			"success_probability": 0.9
+    			}
+			}
+    	}
+    }
+}

@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mimik"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = []
+authors = [
+  {name = "Stephen Adams", email = "scadams@vt.edu"},
+  {name = "Michael 'Alex' Kyer", email = "makyer19@vt.edu"},
+  {name = "Dan Sobien", email = "sdan8@vt.edu"},
+  {name = "Brian Lee", email = "leebri2n@vt.edu"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "matplotlib",
+  "networkx",
+  "pgmpy",
+  "scipy",
+  "pytest",
+  "pytest-mock",
+  "jsonschema",
+  "PyQt6",
+  "ipympl"
+]
+
+[tool.hatch.version]
+path = "mimik/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:mimik tests}"
+
+[tool.coverage.run]
+source_pkgs = ["mimik", "tests"]
+branch = true
+parallel = true
+omit = [
+  "mimik/__about__.py",
+]
+
+[tool.coverage.paths]
+mimik = ["mimik", "*/mimik/mimik"]
+tests = ["tests", "*/mimik/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

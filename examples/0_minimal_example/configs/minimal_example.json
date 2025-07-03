@@ -1,0 +1,22 @@
+{
+	"simple_killweb": {
+		"Find1": {
+			"connected_components": ["Fix1","Fix2"]
+		},
+		"Fix1": {
+			"connected_components": ["Track1","Track2"]
+		},
+		"Track1": {
+            "connected_components": []
+        },
+		"Find2": {
+			"connected_components": ["Fix1","Fix2"]
+		},
+		"Fix2": {
+			"connected_components": ["Track1","Track2"]
+		},
+		"Track2": {
+            "connected_components": []
+        }
+	}
+}

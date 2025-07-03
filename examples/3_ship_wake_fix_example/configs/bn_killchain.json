@@ -1,0 +1,78 @@
+{
+    "f2t2ea": {
+        "Radar_1": {
+            "attributes": {
+                "task": "Find",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Sensor_1"
+            ]
+        },
+        "Sensor_1": {
+            "attributes": {
+                "task": "Fix",
+                "task_arguments": {
+                    "BN_config": "configs/fix_simple.json",
+                    "outcome": "Fix",
+                    "condition": "Success",
+                    "Time": "Day",
+                    "Weather": "Clear"
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Track Algorithm_1"
+            ]
+        },
+        "Track Algorithm_1": {
+            "attributes": {
+                "task": "Track",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Equation_1"
+            ]
+        },
+        "Equation_1": {
+            "attributes": {
+                "task": "Target",
+                "task_arguments": {
+                    "probability": 1.0
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Missle_1"
+            ]
+        },
+        "Missle_1": {
+            "attributes": {
+                "task": "Engage",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": [
+                "Personnel_1"
+            ]
+        },
+        "Personnel_1": {
+            "attributes": {
+                "task": "Assess",
+                "task_arguments": {
+                    "probability": 0.9
+                },
+                "system_name": "System_1"
+            },
+            "connected_components": []
+        }
+    }
+}
