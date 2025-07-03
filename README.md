@@ -2,7 +2,7 @@
 
 Version 1.0
 
-Read full documentation [here](vtnsi.github.io/mimik)
+Read full documentation [here](https://vtnsi.github.io/mimik/index.html "Documentation at vtnsi.github.io")
 
 -----
 

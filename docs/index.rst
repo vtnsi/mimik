@@ -9,6 +9,8 @@ MIMIK documentation
 Mission Illustration and Metric Interface for Killwebs (MIMIK) is a tool that allows a user to construct, visualize, and simulate a custom killweb. This 
 guide will review how to utilize these features using the minimal example included in the repository.
 
+`Source Code <https://github.com/vtnsi/mimik>`_
+
 .. toctree::
    :maxdepth: 1
    :caption: Getting Started
