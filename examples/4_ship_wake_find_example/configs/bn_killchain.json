@@ -9,7 +9,7 @@
                     "condition": 1,
                     "band": "C",
                     "sea_height": 0.5,
-                    "sea_state": "Head"
+                    "sea_direction": "Head"
                 },
                 "system_name": "System_1"
             },

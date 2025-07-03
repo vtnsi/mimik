@@ -2,7 +2,7 @@
     "edges": [
         ["band", "pred"],
         ["sea_height", "pred"],
-        ["sea_state", "pred"]
+        ["sea_direction", "pred"]
     ],
     "data": "data/processed.csv",
     "CPDs": null,
