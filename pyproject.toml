@@ -35,6 +35,7 @@ dependencies = [
   "pytest-mock",
   "jsonschema",
   "PyQt6",
+  "pygraphviz",
   "ipympl"
 ]
 

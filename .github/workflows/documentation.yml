@@ -34,7 +34,7 @@ jobs:
         uses: actions/setup-python@v5
       - name: Install dependencies
         run: |
-          sudo apt-get install pandoc
+          sudo apt-get install pandoc graphviz graphviz-dev
           python -m pip install --upgrade pip
           pip install .
           pip install sphinx sphinx_rtd_theme nbsphinx ipykernel myst_parser
