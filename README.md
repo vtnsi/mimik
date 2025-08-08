@@ -1,6 +1,8 @@
-# mimik
+# MIMIK
 
 Version 1.0
+
+![MIMIK Logo](resources/logo.png)
 
 Read full documentation [here](https://vtnsi.github.io/mimik/index.html "Documentation at vtnsi.github.io")
 
