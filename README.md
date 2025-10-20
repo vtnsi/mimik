@@ -10,7 +10,7 @@ Read full documentation [here](https://vtnsi.github.io/mimik/index.html "Documen
 
 ## Publications
 
-Software Associated with the following publication [Probabilistic Models for Military Kill Chains](https://www.mdpi.com/2079-8954/13/10/924)
+Software Associated with the following publication [Adams, S.; Kyer, A.; Lee, B.; Sobien, D.; Freeman, L.; Werner, J. Probabilistic Models for Military Kill Chains. Systems 2025, 13, 924. https://doi.org/10.3390/systems13100924](https://www.mdpi.com/2079-8954/13/10/924)
 
 ## Table of Contents
 
