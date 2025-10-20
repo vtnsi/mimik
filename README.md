@@ -2,8 +2,7 @@
 
 Version 1.0
 
-![MIMIK Logo](resources/logo.png)
-<img src="resources/logo.png" alt="MIMIK Logo" width="200" height="300"/>
+<img src="resources/logo.png" alt="MIMIK Logo" width="400" height="600"/>
 
 Read full documentation [here](https://vtnsi.github.io/mimik/index.html "Documentation at vtnsi.github.io")
 
