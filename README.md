@@ -2,7 +2,7 @@
 
 Version 1.0
 
-![MIMIK Logo](resources/logo.png)
+![MIMIK Logo](resources/logo.png){width=200 height=300}
 
 Read full documentation [here](https://vtnsi.github.io/mimik/index.html "Documentation at vtnsi.github.io")
 
